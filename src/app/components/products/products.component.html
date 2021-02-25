@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of Products">
+
+        <div class="card item-card card-block mb-4">
+            <h4 class="card-title text-right p-2">{{ product.name}}</h4>
+            <h5 class="item-card-title p-2">{{ product.elementName}}</h5>
+            <img class="bd-placeholder-img card-img-top p-2" width="100%" src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" />
+            
+            <div class="card-body">
+            <div class="card-text">
+                    <strong>{{ product.unitPrice | currency:'tk ' }}</strong><br>
+                    {{product.boxSize}}
+            </div>
+            <div class="card-text">{{ product.manufacturer }}<br><strong>Shop: {{product.shop}}</strong> 
+            </div>
+
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-primary product-btn" >Add to Cart</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary product-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

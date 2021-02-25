@@ -1,0 +1,38 @@
+<div class="container-fluid d-flex justify-content-center">
+    <form [formGroup] = "productMed" (ngSubmit)="saveProduct()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" formControlName="name" class="form-control" id="name"  placeholder="Medicine Name">
+        </div>
+
+        <div class="form-group">
+          <label for="elementName">Element Name</label>
+          <input type="text" formControlName="elementName" class="form-control" id="elementName"  placeholder="element used">
+        </div>
+
+        <div class="form-group">
+          <label for="manufacturer">Manufacturer Name</label>
+          <input type="text" formControlName="manufacturer" class="form-control" id="manufacturer"  placeholder="Produced By">
+        </div>
+
+        <div class="form-group">
+          <label for="shop">Shop Name</label>
+          <input type="text" formControlName="shop" class="form-control" id="shop"  placeholder="Name of the shop">
+        </div>
+
+        <div class="form-group">
+          <label for="unitPrice">Unit Price</label>
+          <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice"  placeholder="Price of one unit">
+        </div>
+
+        <div class="form-group">
+          <label for="boxSize">Box Size</label>
+          <input type="text" formControlName="boxSize" class="form-control" id="boxSize"  placeholder="m file X n">
+        </div>
+        <button type="submit"  class="btn btn-primary">Add Product</button>
+    </form>
+</div>
+
+
+
+

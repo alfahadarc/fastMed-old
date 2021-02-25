@@ -1,0 +1,19 @@
+i{
+    color: white;   
+}
+textarea{
+   width: 100px;
+}
+.fa-facebook:hover{
+    color: rgb(13, 101, 241);
+    text-shadow: 0 0 10px #1272e0;
+     
+}
+.fa-twitter:hover{
+        color: deepskyblue;
+        text-shadow: 0 0 10px deepskyblue;
+}
+.fa-youtube:hover{
+        color: rgb(197, 85, 85);
+        text-shadow: 0 0 10px rgb(241, 89, 19);
+}
